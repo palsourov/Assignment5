@@ -1,7 +1,6 @@
  document.getElementById("question").addEventListener("click",function(event){
     event.preventDefault();
-      window.location.href="./question.html";
-    
+      window.location.href="./text.html";
 });
  
 // Background color change
