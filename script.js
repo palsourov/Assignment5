@@ -19,6 +19,13 @@
     }
     
  })
+//  date section
+
+const date = new Date();
+const week = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const month =["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+document.getElementById("day").innerText =  ` ${week[date.getDay()]}`;
+document.getElementById("month").innerText= `${month[date.getMonth()]} ${date.getDate()}` 
 
 //  card section
 
@@ -33,11 +40,11 @@
         event.preventDefault();
         number++;
 
-        if(number ==6){
-            alert("all board upload successfully");
+        if(number ==1){
+            alert("  board upload successfully");
+             
         }
-        
-             alert(" all board upload successfully");
+            
     
          
          convertedPoint = convertedPoint+1;
@@ -67,13 +74,10 @@
 // card2
  document.getElementById("completedButton2").addEventListener("click",function (event) {  
         number++;
-        if(number ==6){
-            alert("all board upload successfully");
+        if(number ==2){
+            alert("board upload successfully");
         }
         
-             alert(" board upload successfully");
-    
-         
          convertedPoint = convertedPoint+1;
          convertedTask = convertedTask-1;
          document.getElementById("pointNumber").innerText=convertedPoint;
@@ -102,11 +106,10 @@
 // card3
  document.getElementById("completedButton3").addEventListener("click",function (event) {  
     number++;
-    if(number ==6){
-        alert("all board upload successfully");
+    if(number ==3){
+        alert(" board upload successfully");
     }
     
-         alert("  board upload successfully");
 
      
      convertedPoint = convertedPoint+1;
@@ -136,12 +139,10 @@ completed3.classList.remove("text-[#ffff]");
 // card4
  document.getElementById("completedButton4").addEventListener("click",function (event) {  
     number++;
-    if(number ==6){
-        alert("all board upload successfully");
+    if(number ==4){
+        alert("board upload successfully");
     }
     
-         alert(" board upload successfully");
-
      
      convertedPoint = convertedPoint+1;
      convertedTask = convertedTask-1;
@@ -170,11 +171,10 @@ completed4.classList.remove("text-[#ffff]");
 // card5
 document.getElementById("completedButton5").addEventListener("click",function (event) {  
     number++;
-    if(number ==6){
-        alert("all board upload successfully");
+    if(number ==5){
+        alert("board upload successfully");
     }
     
-         alert("  board upload successfully");
 
      
      convertedPoint = convertedPoint+1;
@@ -202,13 +202,14 @@ completed5.classList.remove("text-[#ffff]");
 
 });
 // card6
+ const n=0;
  document.getElementById("completedButton6").addEventListener("click",function (event) {  
     number++;
     if(number ==6){
-        alert("all board upload successfully");
+        alert("board upload successfully");
     }
     
-         alert("  board upload successfully");
+         alert(" Congratulation!! your all board upload successfully");
 
      
      convertedPoint = convertedPoint+1;
