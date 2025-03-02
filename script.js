@@ -24,7 +24,7 @@ const date = new Date();
 const week = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const month =["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 document.getElementById("day").innerText =  ` ${week[date.getDay()]}`;
-document.getElementById("month").innerText= `${month[date.getMonth()]} ${date.getDate()}` 
+document.getElementById("month").innerText= `${month[date.getMonth()]} ${date.getDate() }  ${date.getFullYear()}` 
 
 //  card section
 
