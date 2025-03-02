@@ -37,7 +37,7 @@
             alert("all board upload successfully");
         }
         
-             alert(" board upload successfully");
+             alert(" all board upload successfully");
     
          
          convertedPoint = convertedPoint+1;
@@ -47,9 +47,9 @@
     
        const text = document.getElementById("card1").innerText;
        const tag = document.createElement("h1");
-       tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+       let now = new Date();
+       tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
        tag.classList.add('mt-5');
-       tag.classList.add('text-xl');
        tag.classList.add('bg-[#F4F7FF]');
        tag.classList.add('p-2');
        document.getElementById("activity").appendChild(tag);
@@ -81,9 +81,10 @@
 
        const text = document.getElementById("card2").innerText;
        const tag = document.createElement("h1");
-       tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+       let now = new Date();
+       tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
        tag.classList.add('mt-5');
-       tag.classList.add('text-xl');
+
        tag.classList.add('bg-[#F4F7FF]');
        tag.classList.add('p-2');
        document.getElementById("activity").appendChild(tag);
@@ -115,9 +116,9 @@
 
    const text = document.getElementById("card3").innerText;
    const tag = document.createElement("h1");
-   tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+   let now = new Date();
+   tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
    tag.classList.add('mt-5');
-   tag.classList.add('text-xl');
    tag.classList.add('bg-[#F4F7FF]');
    tag.classList.add('p-2');
    document.getElementById("activity").appendChild(tag);
@@ -149,9 +150,9 @@ completed3.classList.remove("text-[#ffff]");
 
    const text = document.getElementById("card4").innerText;
    const tag = document.createElement("h1");
-   tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+   let now = new Date();
+   tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
    tag.classList.add('mt-5');
-   tag.classList.add('text-xl');
    tag.classList.add('bg-[#F4F7FF]');
    tag.classList.add('p-2');
    document.getElementById("activity").appendChild(tag);
@@ -183,9 +184,9 @@ document.getElementById("completedButton5").addEventListener("click",function (e
 
    const text = document.getElementById("card5").innerText;
    const tag = document.createElement("h1");
-   tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+   let now = new Date();
+   tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
    tag.classList.add('mt-5');
-   tag.classList.add('text-xl');
    tag.classList.add('bg-[#F4F7FF]');
    tag.classList.add('p-2');
    document.getElementById("activity").appendChild(tag);
@@ -217,9 +218,9 @@ completed5.classList.remove("text-[#ffff]");
 
    const text = document.getElementById("card6").innerText;
    const tag = document.createElement("h1");
-   tag.innerText=`you have completed task ${text} at ${new Date().toLocaleDateString()}`;
+   let now = new Date();
+   tag.innerText=`you have completed task ${text} at ${now.toLocaleTimeString()}`;
    tag.classList.add('mt-5');
-   tag.classList.add('text-xl');
    tag.classList.add('bg-[#F4F7FF]');
    tag.classList.add('p-2');
    document.getElementById("activity").appendChild(tag);
